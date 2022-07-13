@@ -3,10 +3,46 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="author" content="YourName">
+	<meta name="author" content="AlissaBordwick">
 	<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
 	<link href="file:///Users/alissabordwick/Desktop/CareerFoundry/Courses/Frontend%20Development%20for%20Designers/1-4%20Coding%20with%20HTML/Portfolio%20Site%20Alissa%20Bordwick/img/favicon.ico" rel="shortcut icon">
-	<title>Alissa Bordwick-+ UX/UI Designer</title>
+	<title>Alissa Bordwick UX/UI Designer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- add normalize below -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+	<!-- add your style.css file below that's in the css directory -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- add font below -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+	#hero {
+	  background-color: #7513c9;
+	  color: white;
+	  padding: 40px;
+	  text-align: center;
+	}
+	</style>
+	<style>
+	#work {
+		background-color: #dddddd;
+		color: black;
+		padding: 40px;
+		text-align: center;
+	}
+	</style>
+	<style>
+	#contact {
+		background-color: #black;
+	  color: black;
+	  padding: 40px;
+	  text-align: center;
+	}
+	</style>
 </head>
 
 <body>
@@ -172,14 +208,14 @@
 
 		<!-- For the hero section -->
 		<div>
-			<div>
+			<div id="hero">
 				<h1>Hi there, I’m Alissa Bordwick… <br>a UX and Graphic Designer based in New York.</h1>
-				<span>Focusing on the needs of users and business goals, I strive to craft better experiences, solve problems and seamlessly bring together people and technology.</span>
+				<h3>Focusing on the needs of users and business goals, I strive to craft better experiences, solve problems and seamlessly bring together people and technology.</h3>
 			</div>
 		</div>
 
 		<!-- For your work/projects -->
-		<div>
+		<div  id="work">
 			<div>
 				<h2>
 					My Work
@@ -187,7 +223,7 @@
 			</div>
 			<div>
 				<picture>
-  			   <source srcset="/img/pluto-play/Pluto-Play-project@1x.jpg" media="(max-width:767px)">
+  			   <source srcset="img/pluto-play/Pluto-Play-project@1x.jpg" media="(max-width:767px)">
 					 <img src="img/pluto-play/pluto-play-project@2x.jpg" alt="Pluto Play"/>
 				</picture>
 			</div>
@@ -196,11 +232,11 @@
 				<p>Pluto Play is an e-wallet app that offers more than just your average e-wallet. It allows users to create budgets, set financial goals and organize reward/loyalty points. This project was created using the double diamond strategy
 					(discover,
 					define, develop and deliver). Throughout the process I used my research, IA, wireframing, prototyping and graphic design skills to come up with the end product. </p>
-				<a href="pluto-play.html">View Case Study</a>
+				<a href="#pluto-play.html" class="button">View Case Study</a>
 			</div>
 			<div>
 				<picture>
-					<source srcset="/img/Vocab2Go/Vocab2Go@1x.jpg" media="(max-width:767px)">
+					<source srcset="img/Vocab2Go/Vocab2Go@1x.jpg" media="(max-width:767px)">
 					<img src="img/Vocab2Go/Vocab2Go@2x.jpg" alt="Vocab2Go"/>
 				</picture>
 			</div>
@@ -208,7 +244,7 @@
 				<h3>Vocab2Go – Grow on the go</h3>
 				<p>Vocab2Go is a vocabulary learning app meant for people on the go and who are short on time. This project was created using the double diamond strategy (discover, define, develop and deliver). Throughout the process I used my research, IA,
 					wireframing, prototyping and graphic design skills to come up with the end product. </p>
-				<a href="">View Case Study</a>
+				<a href="" class="button">View Case Study</a>
 			</div>
 		</div>
 	</main>
@@ -217,7 +253,7 @@
 		<div>
 			<h2>Want me on your team?</h2>
 			<p>I'm currently available for hire for full time remote work. Send me a note and let's talk. Call: <a href="tel:813.480.8284">813.480.8284</a> or Skype me at <a href="skype:live:abordwick_1">live:abordwick_1.</a> Prefer sending an email?</p>
-			<a href="mailto:abordwick@gmail.com">Email me</a>
+			<a href="mailto:abordwick@gmail.com" class="button contact">Send me an email</a>
 		</div>
 		<div>
 
