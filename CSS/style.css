@@ -99,3 +99,24 @@ img {
   background-color: #2680eb;
   color: #ffffff;
 }
+
+#hero {
+  background-color: #7513c9;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+#work {
+  background-color: #dddddd;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+#contact {
+  background-color: white;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
