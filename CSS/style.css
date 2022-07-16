@@ -11,6 +11,10 @@ White: #FFFFFF;
 Grey: #dddddd;
 */
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: #7513c9;
   text-decoration: none; /* No underlining */
@@ -21,7 +25,7 @@ a:visited { /* visited link */
 }
 
 a:hover {
-  color: #a2d335;
+  color: #7513c9;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
@@ -70,7 +74,25 @@ img {
   width: 100%;
 }
 
+#img {
+  width: 100%;
+}
+
+.img2 {
+  max-width: 50%
+}
+
 .button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #a2d335;
+    color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+
+.button2 {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #a2d335;
     color: #ffffff; /* needed to override the default link color */
@@ -85,26 +107,32 @@ img {
 }
 
 .button:hover {
-  background-color: #60a828;
+  background-color: #7513c9;
   color: #ffffff; /* needed to override the default link color */
   text-decoration: none;
 }
 
-.button.contact {
-  background-color: #0c51a3;
-  color: #ffffff; /* needed to override the default link color */
-}
 
 .button.contact:hover {
   background-color: #2680eb;
   color: #ffffff;
 }
 
+#contactlinks {
+  color: #ffffff;
+}
+
 #hero {
   background-color: #7513c9;
   color: white;
-  padding: 40px;
+  padding: 40px 20px 20px 20px;
+  display: inline-block;
+  width: 100%;
   text-align: center;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
 }
 
 #work {
@@ -115,8 +143,123 @@ img {
 }
 
 #contact {
-  background-color: white;
-  color: black;
-  padding: 40px;
+  background-color: #7513c9;
+  color: white;
+  padding: 20px 0;
   text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+#mystory {
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+}
+
+#bullets {
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#bullets h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 9px 9px 22px 0px rgba(50, 50, 50, 0.82);
+  position: fixed;
+  width: 100%;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.container2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#plutoproject {
+  padding: 20px 20px 20px 20px;
+  solid #ffffff;
+  text-align: center;
+  image width: 100%
+}
+
+.logo {
+  max-width: 200px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+nav > ul > li > a:visited { /* visited link */
+  color: #2680eb;
+}
+
+nav > ul > li > a:hover {
+  color: #7513c9;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+nav > ul > li > a:active { /* selected link */
+  color: #60a828;
+}
+
+main {
+  padding-top: 200px;
+}
+
+#social {
+  list-style-type: none;
+  display: inline-block;
+  max-width: 40px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+
+  #shadow {
+    box-shadow: 9px 9px 22px 0px rgba(50, 50, 50, 0.82);
+  }
+
+.padding {
+  padding-left: 0px
 }

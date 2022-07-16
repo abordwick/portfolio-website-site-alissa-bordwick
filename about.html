@@ -19,16 +19,18 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 	<!-- For the header -->
 	<header>
 		<!-- For the navigation -->
-		<div>
-			<source srcset="img/Alissa-Bordwick-Logo@1.png" media="(max-width:767px)">
-			<img src="img/Alissa-Bordwick-Logo@2.png" alt="Logo"/>
-		</picture>
+		<div class="container">
+			<picture>
+				<source srcset="img/Alissa-Bordwick-Logo@1.png" media="(max-width:767px)">
+				<img class="logo" src="img/Alissa-Bordwick-Logo@2.png" alt="Logo"/>
+			</picture>
 			<nav>
 				<ul>
 					<li><a href="index.html">Work</a></li>
@@ -41,77 +43,80 @@
 
 
   <main>
-    <div>
-      <div>
-        <h1>About Me... <br>Alissa Bordwick</h1>
-      </div>
-      <div>
-				<picture>
+		<div>
+			<div id="hero" class="container" class="row">
+			<h1>About Me... <br>Alissa Bordwick</h1>
+		</div>
+		<div class="container2" class="row">
+			<picture id="shadow">
 					<source srcset="img/pluto-play/Me@1x.jpg" media="(max-width:767px)">
 					<img src="img/pluto-play/Me@2x.jpg" alt="Alissa Bordwick"/>
 				</picture>
       </div>
-      <div>
+			<div id="mystory" class="container" class="row">
         <h2>My Story</h2>
         <p>Hi there! My name is Alissa and I’m a UX designer with a background in graphic design. I have experience working in many industries, where I specialized in developing marketing pieces via print, email, social media and web. In my role, I
           created visual concepts to communicate information and draw people in. After some time in this field, I wanted to expand my skill set and when doing research, I found user experience design to be very intriguing as it involves both visual
           design as well as research to create a wonderful user experience. Incorporating both my graphic design skills and my natural instinct to research everything, I want to build satisfying product experiences and solutions. I’m seeking to
           continue this work by helping companies build a more user centric experience and promote user engagement. I’m currently available for full time remote work and am looking for a long term position where I can grow and continue learning
           within the company. In addition to my work and passions in UX design, I’m also a devoted mother to my beautiful daughter and my dog Bella.</p>
-        <a href="file:///Users/alissabordwick/Desktop/CareerFoundry/Courses/Frontend%20Development%20for%20Designers/1-4%20Coding%20with%20HTML/Portfolio%20Site%20Alissa%20Bordwick/files/Bordwick_Alissa%20Resume.pdf" target="_blank">Download My
+        <a href="file:///Users/alissabordwick/Desktop/CareerFoundry/Courses/Frontend%20Development%20for%20Designers/1-4%20Coding%20with%20HTML/Portfolio%20Site%20Alissa%20Bordwick/files/Bordwick_Alissa%20Resume.pdf" target="_blank" class="button">Download My
           Resume</a>
       </div>
-      <div>
+      <div class="row" id="bullets">
         <h3>Relevant Skills</h3>
-        <ul>User Research <br>Competitor Analysis <br>User Interviews <br>User Flows <br>Branding <br>Style Guides <br>Prototyping
+        <ul class="padding">User Research<br>Competitor Analysis<br>User Interviews<br>User Flows<br>Branding<br>Style Guides<br>Prototyping
         </ul>
       </div>
-      <div>
+      <div class="row" id="bullets">
         <h3>Tools I Use</h3>
-        <ul>Adobe XD <br>Photoshop <br>Illustrator <br>InDesign <br>Wordpress <br>MS Office <br>Macintosh OS
-
+        <ul class="padding">Adobe XD<br>Photoshop<br>Illustrator<br>InDesign<br>Wordpress<br>MS Office<br>Macintosh OS
         </ul>
       </div>
   </main>
-  <!-- For the footer  -->
-  <footer id="contact">
-    <div>
-      <h2>Want me on your team?</h2>
-      <p>I'm currently available for hire for full time remote work. Send me a note and let's talk. Call: <a href="tel:813.480.8284">813.480.8284</a> or Skype me at <a href="skype:live:abordwick_1">live:abordwick_1.</a> Prefer sending an email?</p>
-			<a href="mailto:abordwick@gmail.com" class="button contact">Send me an email</a>
-    </div>
-    <div>
+	<!-- For the footer  -->
+	<footer id="contact">
+		<div class="container">
+			<h2>Want me on your team?</h2>
+			<h4>I'm currently available for hire for full time remote work. Send me a note and let's talk. <br>Call: <a href="tel:813.480.8284" id="contactlinks">813.480.8284</a> or Skype me at: <a href="skype:live:abordwick_1" id="contactlinks">live:abordwick_1. <br></a>Prefer sending an email?</h4>
+			<a href="mailto:abordwick@gmail.com" class="button2">Send me an email</a>
+		</div>
 
-      <!--Social Media Layout and Placeholders-->
+		<!--Social Media Layout and Placeholders-->
+		<div>
 			<UL>
-				<li>
-				<a href="https://www.linkedin.com/in/alissabordwick/" target="_blank">
-					<picture>
-						<source srcset="img/Icons SVG/1217173_linkedin_icon.svg" media="(max-width:767px)">
-						<img src="img/Icons SVG/1217173_linkedin_icon.svg" alt="Logo"/>
-					</picture>
-				</a>
-				<a href="https://www.facebook.com/dfineddesigns/" target="_blank">
-					<picture>
-						<source srcset="img/Icons SVG/1217141_fb_icon.svg" media="(max-width:767px)">
-						<img src="img/Icons SVG/1217141_fb_icon.svg" alt="Logo"/>
-					</picture>
-				</a>
-				<a href="https://www.instagram.com/daphney928_/" target="_blank">
-					<picture>
-						<source srcset="img/Icons SVG/1217174_instagram_icon.svg" media="(max-width:767px)">
-						<img src="img/Icons SVG/1217174_instagram_icon.svg" alt="Logo"/>
-					</picture>
-				</a>
-				<a href="https://dfineddesigns.com/" target="_blank">
-					<picture>
-						<source srcset="img/Icons SVG/1217152_wordpress_icon.svg" media="(max-width:767px)">
-						<img src="img/Icons SVG/1217152_wordpress_icon.svg" alt="Logo"/>
-					</picture>
-
-				</a>
-			</li>
+					<div id="social">
+						<a href="https://www.linkedin.com/in/alissabordwick/" target="_blank">
+							<picture>
+								<source srcset="img/Icons SVG/1217173_linkedin_icon.svg" media="(max-width:767px)">
+								<img src="img/Icons SVG/1217173_linkedin_icon.svg" alt="Logo" />
+							</picture>
+						</a>
+					</div>
+					<div id="social">
+						<a href="https://www.facebook.com/dfineddesigns/" target="_blank">
+							<picture>
+								<source srcset="img/Icons SVG/1217141_fb_icon.svg" media="(max-width:767px)">
+								<img src="img/Icons SVG/1217141_fb_icon.svg" alt="Logo" />
+							</picture>
+						</a>
+					</div>
+					<div id="social">
+						<a href="https://www.instagram.com/daphney928_/" target="_blank">
+							<picture>
+								<source srcset="img/Icons SVG/1217174_instagram_icon.svg" media="(max-width:767px)">
+								<img src="img/Icons SVG/1217174_instagram_icon.svg" alt="Logo" />
+							</picture>
+						</a>
+					</div>
+					<div id="social">
+						<a href="https://dfineddesigns.com/" target="_blank">
+							<picture>
+								<source srcset="img/Icons SVG/1217152_wordpress_icon.svg" media="(max-width:767px)">
+								<img src="img/Icons SVG/1217152_wordpress_icon.svg" alt="Logo" />
+							</picture>
+						</a>
+					</div>
 			</UL>
 		</div>
 		<p>Copyright Alissa Bordwick 2022</p>
-	</footer>
