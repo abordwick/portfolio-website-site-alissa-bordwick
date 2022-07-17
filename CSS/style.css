@@ -42,7 +42,7 @@ a:active { /* selected link */
   body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 18px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -78,9 +78,13 @@ img {
   width: 100%;
 }
 
-.img2 {
-  max-width: 50%
-}
+#img2{
+        max-width: 50%;
+        max-height: 100%;
+        text-align: center;
+        display: block; /* remove extra space below image */
+    }
+
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -118,8 +122,22 @@ img {
   color: #ffffff;
 }
 
+#plutoback {
+  background-color: #a2d335;
+}
+
+#plutobackwhite {
+  background-color: #ffffff;
+  padding: -100px;
+}
+
+
 #contactlinks {
-  color: #ffffff;
+  color: #a2d335;
+}
+
+#contactlinks2 {
+  color: #a2d335;
 }
 
 #hero {
@@ -133,6 +151,10 @@ img {
 
 #hero h1 {
   text-align: center; /* Centers text */
+}
+
+#hero span {
+  display: block;
 }
 
 #work {
@@ -150,16 +172,6 @@ img {
   font-weight: 400;
   display: inline-block;
   width: 100%;
-}
-
-
-
-#mystory {
-  padding: 20px 20px 20px 20px;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  padding: 20px;
 }
 
 #bullets {
@@ -195,16 +207,26 @@ header {
   padding: 0px;
   margin: 0px;
 }
+.container3 {
+  margin: 100px 100px 100px 100px
+
+}
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 #plutoproject {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 0px 20px;
   solid #ffffff;
   text-align: center;
   image width: 100%
@@ -214,6 +236,7 @@ header {
   max-width: 200px;
 }
 
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -222,6 +245,7 @@ nav > ul {
 
 nav > ul > li {
   display: inline-block;
+
 }
 
 nav > ul > li > a {
@@ -245,21 +269,138 @@ nav > ul > li > a:active { /* selected link */
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 175px;
 }
 
-#social {
+
+
+
+div > ul {
   list-style-type: none;
-  display: inline-block;
-  max-width: 40px;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
+  padding: 0;
+
 }
+
+
+
+div > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+div > ul > li > a:visited { /* visited link */
+  color: #2680eb;
+}
+
+div > ul > li > a:hover {
+  color: #7513c9;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+div > ul > li > a:active { /* selected link */
+  color: #60a828;
+}
+
 
   #shadow {
     box-shadow: 9px 9px 22px 0px rgba(50, 50, 50, 0.82);
   }
 
+
 .padding {
-  padding-left: 0px
+  padding-left: 40px
+}
+
+.border {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: auto;
+  height: auto;
+  border: 5px solid #a2d335;
+  background: #f1f2f2;
+  margin: 50px 50px;
+}
+
+.skills {
+  background-color: #2680eb;
+}
+
+div > ul {
+  list-style: none; /* Remove default bullets */
+}
+
+div > ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #7513c9; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+#about-page h3 { margin-top: 0;}
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px
+  }
+  .col-lg-5 {
+  width: 40%;
+  }
+
+.col-lg-7 {
+width: 60%;
+}
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+#about-page h3 { margin-top: 0;}
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
