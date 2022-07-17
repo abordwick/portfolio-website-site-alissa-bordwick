@@ -88,22 +88,27 @@ img {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #a2d335;
-    color: #ffffff; /* needed to override the default link color */
+  background-color: #a2d335;
+  color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-delay: 0.2s;
 }
 
 .button2 {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #a2d335;
-    color: #ffffff; /* needed to override the default link color */
+  background-color: #a2d335;
+  color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:visited {
@@ -113,13 +118,14 @@ img {
 .button:hover {
   background-color: #7513c9;
   color: #ffffff; /* needed to override the default link color */
-  text-decoration: none;
+  opacity: 0.8;
 }
 
 
 .button.contact:hover {
   background-color: #2680eb;
   color: #ffffff;
+  opacity: 0.8;
 }
 
 #plutoback {
@@ -341,7 +347,36 @@ div > ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -363,8 +398,14 @@ Medium devices (640px and larger)
   float: left;
   padding: 10px;
 }
+
+.col-md-5 {
+width: 40%;
+}
 #about-page h3 { margin-top: 0;}
 }
+
+
 
 
 /* ==============================
@@ -398,7 +439,7 @@ width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
