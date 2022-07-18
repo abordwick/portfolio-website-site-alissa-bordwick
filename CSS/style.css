@@ -74,6 +74,14 @@ img {
   width: 100%;
 }
 
+.socialicons img{
+  width: 32px;
+}
+
+.socialicons li{
+  display:inline
+}
+
 #img {
   width: 100%;
 }
@@ -128,6 +136,10 @@ img {
   opacity: 0.8;
 }
 
+.aboutimage img {
+  width: 50%;
+}
+
 #plutoback {
   background-color: #a2d335;
 }
@@ -164,7 +176,7 @@ img {
 }
 
 #work {
-  background-color: #dddddd;
+  background-color: #ffffff;
   color: black;
   padding: 40px;
   text-align: center;
