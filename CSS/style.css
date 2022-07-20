@@ -149,6 +149,10 @@ img {
   width: 50%;
 }
 
+.portfolio {
+  text-align: left;
+}
+
 #plutoback {
   background-color: #a2d335;
 }
@@ -224,6 +228,9 @@ header {
   width: 100%;
 }
 
+
+
+
 /* Layout styling */
 
 .container {
@@ -245,9 +252,20 @@ header {
   padding: 15px;
 }
 
+.container5{
+  justify-content: flex-end;
+}
+
+.container6 {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+
 
 .row::after {
   content: "";
@@ -266,13 +284,15 @@ header {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 300px;
+  float:left;
 }
 
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
+  display: inline-block;
 
 }
 
@@ -306,7 +326,9 @@ main {
 }
 
 
-
+.skills-tools {
+  text-align: left;
+}
 
 div > ul {
   list-style-type: none;
@@ -405,6 +427,7 @@ div > ul li::before {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -418,11 +441,12 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px
   }
+
   .col-md-6 {
   width: 50%;
   }
   [class*="col-"] {
-  float: left;
+  float: right;
   padding: 10px;
 }
 
