@@ -42,7 +42,7 @@ a:active { /* selected link */
   body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
+  font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 1.75em;
   font-weight: 700;
 
 }
@@ -174,10 +174,11 @@ img {
 #hero {
   background-color: #7513c9;
   color: white;
-  padding: 40px 20px 20px 20px;
+  padding: 20px 20px 20px 0px;
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin-top: auto;
 }
 
 #hero h1 {
@@ -234,7 +235,7 @@ header {
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .container2 {
@@ -285,7 +286,6 @@ header {
 
 .logo {
   max-width: 300px;
-  float:left;
 }
 
 
@@ -322,7 +322,7 @@ nav > ul > li > a:active { /* selected link */
 }
 
 main {
-  padding-top: 75px;
+  padding-top: 133px;
 }
 
 
@@ -335,7 +335,6 @@ div > ul {
   padding: 0;
 
 }
-
 
 
 div > ul > li > a {
@@ -428,6 +427,8 @@ div > ul li::before {
 }
 
 
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -440,6 +441,44 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px
+  }
+
+  .logo {
+    float: left;
+  }
+
+  main {
+    padding-top: 75px;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+
+  }
+
+  body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+  text-align: center;
+
+}
+
+#hero {
+  background-color: #7513c9;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+  .container {
+    padding: 0 15px;
   }
 
   .col-md-6 {
@@ -472,9 +511,45 @@ Large devices (1024px or larger)
     float: right;
     margin-top: 4px
   }
+
+  .logo {
+    float: left;
+  }
+
   .col-lg-5 {
   width: 40%;
   }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  body {
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+  text-align: center;
+
+}
+
+#hero {
+  background-color: #7513c9;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
 
 .col-lg-7 {
 width: 60%;
