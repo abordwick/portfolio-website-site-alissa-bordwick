@@ -54,24 +54,24 @@ h1, h2, h3, h4 {
   line-height: 1.4;
   text-align: center;
 }
-h1 {
-  font-size: 1.75em;
-  font-weight: 700;
 
+h1 {
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1em;
   font-weight: 700;
   margin-top: 0;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: .75em;
   font-weight: 400;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: .5em;
   font-weight: 400;
 }
 
@@ -174,7 +174,7 @@ img {
 #hero {
   background-color: #7513c9;
   color: white;
-  padding: 20px 20px 20px 0px;
+  padding: 20px 20px 20px 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -258,7 +258,7 @@ header {
 }
 
 .container6 {
-  max-width: 75%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -443,6 +443,12 @@ Medium devices (640px and larger)
     margin-top: 4px
   }
 
+  .container6 {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .logo {
     float: left;
   }
@@ -451,22 +457,7 @@ Medium devices (640px and larger)
     padding-top: 75px;
   }
 
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
 
-  }
-
-  body {
-  background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
-  text-align: center;
-
-}
 
 #hero {
   background-color: #7513c9;
@@ -495,6 +486,30 @@ width: 40%;
 #about-page h3 { margin-top: 0;}
 }
 
+h1, h2, h3, h4 {
+  line-height: 1.4;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
 
 
@@ -512,6 +527,12 @@ Large devices (1024px or larger)
     margin-top: 4px
   }
 
+  .container6 {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .logo {
     float: left;
   }
@@ -520,16 +541,6 @@ Large devices (1024px or larger)
   width: 40%;
   }
 
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
-  }
-
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-    margin-top: 0;
-  }
 
   body {
   background-color: #ffffff;
@@ -565,6 +576,8 @@ width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 /* ==============================
 X-large devices (1440px or larger)
