@@ -225,8 +225,7 @@ img {
 
 header {
   background-color: #ffffff;
-  padding: 10px;
-  text-align: center;
+  padding: 10px 0 4px;
   box-shadow: 9px 9px 22px 0px rgba(50, 50, 50, 0.82);
   position: fixed;
   width: 100%;
@@ -268,7 +267,6 @@ header {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
-  justify-content: center;
 }
 
 
@@ -289,21 +287,17 @@ header {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 150px;
+  float: left;
 }
 
 
 nav > ul {
   list-style-type: none;
   padding: 0px;
-  display: inline-block;
-
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-
-}
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -325,8 +319,41 @@ nav > ul > li > a:active { /* selected link */
   color: #60a828;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 main {
-  padding-top: 133px;
+  padding-top: 40px;
 }
 
 
@@ -447,6 +474,22 @@ Medium devices (640px and larger)
     margin-top: 4px
   }
 
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav > ul > li {
+   display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   .container6 {
     max-width: 75%;
     margin-left: auto;
@@ -455,6 +498,7 @@ Medium devices (640px and larger)
 
   .logo {
     float: left;
+    min-width: 300px;
   }
 
   main {
@@ -539,6 +583,7 @@ Large devices (1024px or larger)
 
   .logo {
     float: left;
+    min-width: 300px;
   }
 
   .col-lg-5 {

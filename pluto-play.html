@@ -20,6 +20,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/3a90f7fb6a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,7 +28,8 @@
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
-			<picture><a href="index.html"</a>
+			<div class="navtoggle" id="myNavtoggle">
+			<picture><picture><a href="index.html"</a>
 				<source srcset="img/Alissa-Bordwick-Just-Name-Logo@1.png" media="(max-width:767px)">
 				<img class="logo" src="img/Alissa-Bordwick-Just-Name-Logo@2.png" alt="Logo" />
 			</picture>
@@ -36,11 +38,12 @@
 					<li><a href="index.html">Work</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</nav>
 		</div>
+		</div>
 	</header>
-
 
 	<main>
 
@@ -354,3 +357,6 @@
 		</div>
 		<p>Copyright Alissa Bordwick 2022</p>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/scripts.js"></script>
+</body>
