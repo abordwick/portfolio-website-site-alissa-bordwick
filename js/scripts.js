@@ -1,12 +1,11 @@
 console.log("Hey there, welcome to my portfolio site!")
 
 // Function that opens the menu when it is closed, and closes the menu when it is open
-function menuToggle () {
-  var x = document.getElementById('mynavtoggle')
-  // Below changes class name based on existing class name, so that the proper version of the menu (shown or hidden) will be displayed.
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
-    x.className += ' responsive'
+    x.className += ' responsive';
   } else {
-    x.className = 'navtoggle'
+    x.className = 'navtoggle';
   }
 }
