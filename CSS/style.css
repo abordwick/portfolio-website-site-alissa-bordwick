@@ -1,7 +1,7 @@
 
 /*
 Colors used:
-Purple: #7513c9;
+Purple: #7313c6;
 Green: #60a828;
 Light Green: #a2d335;
 Blue: #0c51a3;
@@ -16,7 +16,7 @@ Grey: #dddddd;
 }
 
 a {
-  color: #7513c9;
+  color: #7313c6;
   text-decoration: none; /* No underlining */
 }
 
@@ -25,7 +25,7 @@ a:visited { /* visited link */
 }
 
 a:hover {
-  color: #7513c9;
+  color: #7313c6;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
@@ -38,8 +38,7 @@ a:active { /* selected link */
   color: #60a828;
 }
 
-
-  body {
+body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
@@ -47,10 +46,12 @@ a:active { /* selected link */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
   text-align: center;
-
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
   text-align: center;
 }
@@ -67,11 +68,12 @@ h2 {
 }
 
 h3 {
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: 400;
 }
+
 h4 {
-  font-size: .5em;
+  font-size: 0.5em;
   font-weight: 400;
 }
 
@@ -84,61 +86,65 @@ img {
   width: 100%;
 }
 
-.socialicons img{
+.socialicons img {
   width: 32px;
 }
 
-.socialicons li{
-  display:inline
+.socialicons li {
+  display: inline;
 }
 
 #img {
   width: 100%;
 }
 
-#img2{
-        max-width: 50%;
-        max-height: 100%;
-        text-align: center;
-        display: block; /* remove extra space below image */
-    }
-
+#img2 {
+  max-width: 50%;
+  max-height: 100%;
+  text-align: center;
+  display: block; /* remove extra space below image */
+}
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #a2d335;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  text-decoration: none;
+  border: 2px solid #a2d335;
+  background-color: white;
+  color: black;
   padding: 10px;
-  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
   transition-duration: 0.2s;
   transition-property: opacity;
   transition-delay: 0.2s;
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
 }
 
 .button2 {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #a2d335;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  text-decoration: none;
+  border: 2px solid #a2d335;
+  color: white;
   padding: 10px;
-  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
   transition-duration: 0.2s;
   transition-property: opacity;
+  transition-delay: 0.2s;
+  display: inline-block;
 }
 
 .button:visited {
-  color: #ffffff;
+  color: #0c51a3;
 }
 
 .button:hover {
-  background-color: #7513c9;
+  background-color: #7313c6;
   color: #ffffff; /* needed to override the default link color */
   opacity: 0.8;
 }
 
+.button2:hover {
+  background-color: white;
+  color: black;
+
+}
 
 .button.contact:hover {
   background-color: #2680eb;
@@ -150,7 +156,7 @@ img {
   width: 85%;
 }
 
-.pluto-play-sections img{
+.pluto-play-sections img {
   width: 50%;
 }
 
@@ -167,7 +173,6 @@ img {
   padding: -100px;
 }
 
-
 #contactlinks {
   color: #a2d335;
 }
@@ -177,16 +182,14 @@ img {
 }
 
 #hero {
-  background-color: #7513c9;
+  background-color: #7313c6;
   color: white;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
   margin-top: auto;
 }
-
-
 
 #hero span {
   display: block;
@@ -200,7 +203,7 @@ img {
 }
 
 #contact {
-  background-color: #7513c9;
+  background-color: #7313c6;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -210,7 +213,7 @@ img {
 }
 
 #bullets {
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   text-align: center;
   display: inline-block;
   width: 100%;
@@ -226,13 +229,10 @@ img {
 header {
   background-color: #ffffff;
   padding: 10px 0 4px;
-  box-shadow: 9px 9px 22px 0px rgba(50, 50, 50, 0.82);
+  box-shadow: 9px 9px 22px rgba(50, 50, 50, 0.82);
   position: fixed;
   width: 100%;
 }
-
-
-
 
 /* Layout styling */
 
@@ -244,8 +244,9 @@ header {
   padding: 0px;
   margin: 0px;
 }
+
 .container3 {
-  margin: 100px 100px 100px 100px
+  margin: 100px;
 }
 
 .container4 {
@@ -255,7 +256,7 @@ header {
   padding: 15px;
 }
 
-.container5{
+.container5 {
   justify-content: flex-end;
 }
 
@@ -269,21 +270,15 @@ header {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-#plutoproject {
-  padding: 20px 20px 0px 20px;
-  solid #ffffff;
-  text-align: center;
-  image width: 100%
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 .logo {
@@ -291,13 +286,11 @@ header {
   float: left;
 }
 
-
 nav > ul {
   list-style-type: none;
   padding: 0px;
   margin: 0;
 }
-
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -311,7 +304,7 @@ nav > ul > li > a:visited { /* visited link */
 }
 
 nav > ul > li > a:hover {
-  color: #7513c9;
+  color: #7313c6;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
@@ -323,7 +316,8 @@ nav > ul > li > a:active { /* selected link */
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -335,27 +329,27 @@ nav > ul > li > a:active { /* selected link */
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(162, 211, 53, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 main {
   padding-top: 40px;
 }
-
 
 .skills-tools {
   text-align: left;
@@ -364,9 +358,7 @@ main {
 div > ul {
   list-style-type: none;
   padding: 0;
-
 }
-
 
 div > ul > li > a {
   padding: 0 15px;
@@ -380,7 +372,7 @@ div > ul > li > a:visited { /* visited link */
 }
 
 div > ul > li > a:hover {
-  color: #7513c9;
+  color: #7313c6;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
@@ -388,14 +380,12 @@ div > ul > li > a:active { /* selected link */
   color: #60a828;
 }
 
-
-  #shadow {
-    box-shadow: 9px 9px 22px 0px rgba(50, 50, 50, 0.82);
-  }
-
+#shadow {
+  box-shadow: 9px 9px 22px rgba(50, 50, 50, 0.82);
+}
 
 .padding {
-  padding-left: 40px
+  padding-left: 40px;
 }
 
 .border {
@@ -406,7 +396,7 @@ div > ul > li > a:active { /* selected link */
   height: auto;
   border: 5px solid #a2d335;
   background: #f1f2f2;
-  padding: 25px 25px;
+  padding: 25px;
 }
 
 .skills {
@@ -419,7 +409,7 @@ div > ul {
 
 div > ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #7513c9; /* Change the color */
+  color: #7313c6; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -427,10 +417,11 @@ div > ul li::before {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -440,8 +431,8 @@ div > ul li::before {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -449,15 +440,13 @@ div > ul li::before {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -468,27 +457,28 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
-    margin-top: 4px
+    margin-top: 4px;
   }
 
   nav > ul {
-  margin: 1em 0;
-}
+    margin: 1em 0;
+  }
 
   nav > ul > li {
-   display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
   .container6 {
     max-width: 75%;
@@ -505,60 +495,62 @@ Medium devices (640px and larger)
     padding-top: 75px;
   }
 
-
-
-#hero {
-  background-color: #7513c9;
-  color: white;
-  padding: 40px 20px 20px 20px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
+  #hero {
+    background-color: #7313c6;
+    color: white;
+    padding: 40px 20px 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 
   .container {
     padding: 0 15px;
   }
 
   .col-md-6 {
-  width: 50%;
+    width: 50%;
   }
+
   [class*="col-"] {
-  float: right;
-  padding: 10px;
-}
+    float: right;
+    padding: 10px;
+  }
 
-.col-md-5 {
-width: 40%;
-}
-#about-page h3 { margin-top: 0;}
+  .col-md-5 {
+    width: 40%;
+  }
 
+  #about-page h3 { margin-top: 0; }
 
-h1, h2, h3, h4 {
-  line-height: 1.4;
-  text-align: center;
-}
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.4;
+    text-align: center;
+  }
 
-h1 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
+  h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
 
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-  margin-top: 0;
-}
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 0;
+  }
 
-h3 {
-  font-size: 1.25em;
-  font-weight: 400;
-}
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
+  h3 {
+    font-size: 1.25em;
+    font-weight: 400;
+  }
 
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
 }
 
 /* ==============================
@@ -569,10 +561,11 @@ Large devices (1024px or larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
-    margin-top: 4px
+    margin-top: 4px;
   }
 
   .container6 {
@@ -587,46 +580,50 @@ Large devices (1024px or larger)
   }
 
   .col-lg-5 {
-  width: 40%;
+    width: 40%;
   }
 
-
   body {
-  background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
-  text-align: center;
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #000000;
+    text-align: center;
+  }
 
-}
+  #hero {
+    background-color: #7313c6;
+    color: white;
+    padding: 40px 20px 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
 
-#hero {
-  background-color: #7513c9;
-  color: white;
-  padding: 40px 20px 20px 20px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
+  .col-lg-7 {
+    width: 60%;
+  }
 
-.col-lg-7 {
-width: 60%;
-}
   [class*="col-"] {
-  float: left;
-  padding: 10px;
+    float: left;
+    padding: 10px;
+  }
+
+  #about-page h3 { margin-top: 0; }
 }
-#about-page h3 { margin-top: 0;}
-}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
   text-align: center;
 }
@@ -646,15 +643,12 @@ h3 {
   font-size: 1.25em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 
-
-
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
